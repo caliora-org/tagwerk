@@ -1,0 +1,18 @@
+# Contact links shown next to the two forms on the "New issue" page.
+# blank_issues_enabled: false hides the "open a blank issue" escape hatch — every issue then
+# arrives through one of the two forms. Keep the Discussions link below as the way out for
+# everything that is neither a bug nor a request.
+blank_issues_enabled: false
+contact_links:
+  - name: Questions, half-formed ideas, "am I holding it wrong?"
+    url: https://github.com/caliora-org/tagwerk/discussions
+    about: Anything that is not yet a bug or a request. No form, no fields.
+  - name: The file format, in full
+    url: https://caliora.org/tagwerk/format.html
+    about: What a note may contain and what the parser guarantees. Worth a look before filing a syntax bug.
+  - name: Security or privacy problem
+    url: https://github.com/caliora-org/tagwerk/security/advisories/new
+    about: Report privately here, not as a public issue.
+  - name: tagwerk
+    url: https://caliora.org/tagwerk/
+    about: The product page, the beta, and what the app does today.

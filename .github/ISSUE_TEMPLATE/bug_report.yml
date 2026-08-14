@@ -1,0 +1,133 @@
+name: Bug report
+description: Something in tagwerk behaves differently than it should
+title: "Bug: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Two things before you start.
+
+        **This tracker is public.** Everything you write here — note contents, screenshots,
+        folder paths, server names, calendar entries — is readable by anyone and stays in the
+        history. Replace anything private with made-up text. A bug that reproduces with your
+        real notes reproduces with `- [ ] Buy vegan food` too.
+
+        **English is the form, not the rule.** Answer in German if that is easier; the reply
+        will be in your language.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Before you file
+      options:
+        - label: I searched the open and closed issues and this is not one of them.
+          required: true
+        - label: I am on the current beta (Play Store) or the current desktop build.
+          required: false
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you saw, and what you expected instead.
+      placeholder: |
+        I ticked a task in the task list. The line in the note stayed unchecked.
+        I expected the note to change with it.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The shortest path from opening the app to the wrong result.
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: note
+    attributes:
+      label: The note it happens with
+      description: >
+        The smallest note that still shows the problem, private content replaced.
+        This is the most useful field in the whole form — the note is what the parser sees.
+      render: markdown
+      placeholder: |
+        - [ ] Call the tax office @paul #office !
+        - [>] Review the offer →2026-08-20
+        - [ ] Take out the bins R/P1W
+        09:30-11:00 Sprint review @team
+    validations:
+      required: false
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Where
+      options:
+        - Android app
+        - Android home-screen widget
+        - Windows desktop
+        - Linux desktop (AppImage)
+        - Web demo (caliora.org/tagwerk)
+        - Website or documentation
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: >
+        Android: Settings → Apps → tagwerk → App details at the bottom, or the Play Store
+        entry under "App info". AppImage: the file name. If you cannot find a number, write
+        the date you installed or updated.
+      placeholder: "0.1.0 (beta, installed 2026-08-12)"
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: Device and operating system
+      placeholder: "Pixel 7a, Android 15 · Windows 11 23H2 · Ubuntu 24.04"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: storage
+    attributes:
+      label: Where your notes live
+      description: Storage is the first suspect whenever text goes missing.
+      options:
+        - App storage (the Android default, no folder picked)
+        - A folder I picked myself
+        - A folder plus WebDAV sync
+        - Not sure
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: severity
+    attributes:
+      label: Did it touch your text
+      options:
+        - label: Text I had written was lost, changed or duplicated.
+          required: false
+        - label: It happens every time I try. (Leave unticked if it happened once.)
+          required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots, logs, anything else
+      description: >
+        Drop images straight into this field. If sync is involved, name the WebDAV server
+        (Nextcloud, mailbox.org, own box) — the servers differ in ways that matter.
+    validations:
+      required: false
