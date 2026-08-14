@@ -10,7 +10,7 @@ this repository exists so that reports have somewhere to land and a number to be
 | --- | --- |
 | Something behaves wrongly | [File a bug](../../issues/new?template=bug_report.yml) |
 | Something is missing | [File a request](../../issues/new?template=feature_request.yml) |
-| A question, or an idea that is not a request yet | [Discussions](../../discussions) |
+| A question, or an idea that is not a request yet | [An issue without a form](../../issues/new) |
 | A security or privacy problem | [Report it privately](../../security/advisories/new) — not as an issue |
 
 Pull requests are not accepted: without the code there is nothing here to change. GitHub does
