@@ -6,12 +6,29 @@ this repository exists so that reports have somewhere to land and a number to be
 
 ## What belongs here
 
-| | |
-| --- | --- |
-| Something behaves wrongly | [File a bug](../../issues/new?template=bug_report.yml) |
-| Something is missing | [File a request](../../issues/new?template=feature_request.yml) |
-| A question, or an idea that is not a request yet | [An issue without a form](../../issues/new) |
-| A security or privacy problem | [Report it privately](../../security/advisories/new) — not as an issue |
+<table>
+  <tbody>
+    <tr>
+      <th>Something behaves wrongly</th>
+      <td><a href="../../issues/new?template=bug_report.yml">File a bug</a></td>
+    </tr>
+    <tr>
+      <th>Something is missing</th>
+      <td><a href="../../issues/new?template=feature_request.yml">File a request</a></td>
+    </tr>
+    <tr>
+      <th>A question, or an idea that is not a request yet</th>
+      <td><a href="../../issues/new">An issue without a form</a></td>
+    </tr>
+    <tr>
+      <th>A security or privacy problem</th>
+      <td>
+        <a href="../../security/advisories/new">Report it privately</a>
+        — not as an issue
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 Pull requests are welcome for this README and the issue forms: a typo, a dead link, a clearer
 question. The app's source code is not here, so a change to the app itself belongs in an
